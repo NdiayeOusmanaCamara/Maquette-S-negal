@@ -1,0 +1,153 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.logo img {
+    height: 50px; /* Adjust the height as needed */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+    transition: 0.02s;
+}
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-icon {
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.language-selector select {
+    padding: 5px;
+}
+
+.contact button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Section styles */
+.history {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+
+.history h2 {
+    color: red;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.opening {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    
+    
+}
+
+.opening-year {
+    background: red;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+   width: 30%;
+  
+}
+
+.opening-year p {
+    margin: 0;
+    font-size: 1.2em;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.opening-year h3 {
+    display: flex;
+    margin: 5px 0 0;
+    font-size: 2.5em;
+    justify-content:flex-end;
+}
+
+.quote {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 30%;
+}
+
+.quote:before {
+    content: '“';
+    font-size: 4em;
+    color: red;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+
+.quote p {
+    margin: 0;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9ff;
+    font-size: 50px;
+
+}
+
+footer p {
+    color: red;
+    font-size: 1.5em;
+    margin: 0;
+   
+}
