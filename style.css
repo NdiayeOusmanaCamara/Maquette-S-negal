@@ -81,7 +81,7 @@ nav ul li a:hover{
 /* Section styles */
 section {
     padding: 50px 20px;
-    background: #f9f9f9;
+    /* background: #f9f9f9; */
     text-align: center;
     position: relative;
     z-index: -2;
@@ -145,6 +145,7 @@ section {
     left: -15px;
     bottom:0;
     border-radius: 5px;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .quote {
@@ -160,7 +161,7 @@ section {
     margin-top: 20px;
    position: relative;
    left: 10px;
-    
+   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .pedagogy-content {
@@ -210,6 +211,7 @@ background-color: white;
 border-bottom:4px solid #cc0000;
 margin: 20px;
 margin-top: 0px;
+box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
 }
 .item h1{
     color: #cc0000;
@@ -242,7 +244,7 @@ margin-top: 0px;
     border-top: 10px solid #cc0000;
     border-right: 10px solid #cc0000;
     position: relative;
-   
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 
     }
     .valeurs h2{
@@ -316,6 +318,7 @@ margin-top: 0px;
         background-color: #fff;
         box-sizing: border-box;
         margin: 10px;
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
        
        
     }
@@ -406,10 +409,12 @@ font-size: 1.5em;
     justify-content: left;
    margin-left: 10px;
 }
+
 .site img{
     width: 20px;
     color: #cc0000;
-    background-color: #cc0000;
+    margin: 10px;
+
     
 }
 .title2 h2{
@@ -449,7 +454,7 @@ font-size: 1.5em;
     border-radius: 5px;
     margin-top: 20px;
     width: 70%;
-    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
 
 }
 .offers {
@@ -498,7 +503,15 @@ font-size: 1.5em;
 .partners{
     background-color: #fff;
 }
-.rond{}
+.rond1{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    color: #cc0000;
+    background-color: #cc0000;
+}
 .partner-logos {
     flex-wrap: wrap;
     margin-left: 10%;
