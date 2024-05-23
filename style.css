@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 /* Header styles */
@@ -15,44 +14,55 @@ header {
     padding: 10px 20px;
     background: #fff;
     border-bottom: 1px solid #ddd;
-    
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
 .logo img {
-    height: 50px; /* Adjust the height as needed */
+    height: 50px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 60px;
     margin: 0;
     padding: 0;
+    
 }
 
 nav ul li {
     display: inline;
+  
 }
 
 nav ul li a {
     text-decoration: none;
     color: #000;
+    font-weight: bold;
 }
 nav ul li a:hover{
-    text-decoration: none;
-    color: red;
+    
     cursor: pointer;
-    transition: 0.02s;
+    color: #cc0000;
+    border-bottom: 2px solid #cc0000;
+    
 }
+
 .actions {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-right: 80px;
 }
 
 .search-icon {
     font-size: 1.2em;
     cursor: pointer;
+    margin-right: 100px;
+
+
 }
 
 .language-selector select {
@@ -60,94 +70,512 @@ nav ul li a:hover{
 }
 
 .contact button {
-    background-color: red;
+    background-color: #cc0000;
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 /* Section styles */
-.history {
-    text-align: center;
+section {
     padding: 50px 20px;
     background: #f9f9f9;
+    text-align: center;
+    position: relative;
+    z-index: -2;
 }
 
-.history h2 {
-    color: red;
+.history h2, .pedagogy h2, .numbers h2, .current-offers h2, .partners h2 {
+    color: #cc0000;
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-top: 60px;
 }
 
-.opening {
+.opening, .pedagogy-content, .offers, .partner-logos {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
-    gap: 50px;
-    
-    
+    gap: 40px;
+    width: 80%;
+    position: relative;
+
 }
 
+/* Specific section styles */
 .opening-year {
-    background: red;
+    background: #cc0000;
     color: #fff;
     padding: 20px;
-    border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-   width: 30%;
-  
+    border-bottom-right-radius: 80px;
+    width: 50%;
+    border-bottom:15px solid #b85656;
+    margin-left: 90px;
+
 }
 
 .opening-year p {
     margin: 0;
-    font-size: 1.2em;
+    font-size: 2.5em;
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
 }
 
 .opening-year h3 {
+    margin: 0;
+    font-size: 3em;
     display: flex;
-    margin: 5px 0 0;
-    font-size: 2.5em;
-    justify-content:flex-end;
+    justify-content: flex-end;
+}
+.point{
+    color: #cc0000;
+    font-size: 100px;
+    margin-top: 40px;
+}
+.color{
+    background-color: #cc0000;
+    width: 100%;
+    height: 38vh;
+    transform: rotate(5deg);
+    position:absolute;
+    top: -15px;
+    z-index: -1;
+    left: -15px;
+    bottom:0;
+    border-radius: 5px;
 }
 
 .quote {
     background: #fff;
     padding: 20px;
     border-radius: 5px;
+    transform: rotate(5);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 40px;
+    margin-top: 20px;
+   position: relative;
+   left: 10px;
+    
+}
+
+.pedagogy-content {
+   display: flex;
+    align-items:center;
+    text-align: left;
+    margin-top: 40px;
+    justify-content: scenter;
+    width: 90%;
+    justify-items: center;
+    margin: 40px;
+}
+
+.pedagogy-content .video {
+    width: 500px;
+    max-width: 100px;
+    margin-top: 40px;
+}
+
+.pedagogy-content .description {
+    max-width: 500px;
+    text-align: left;
+}
+.pedagogy-content .description h3{
+    color: #cc0000;
+}
+.pliers h1{
+    display: flex;
+    justify-content: left;
+    margin-left:110px;
+    color: #cc0000;
+}
+.contenair{
+    display: grid;
+   grid-template-columns: 350px 350px;
+   margin-left: 90px;
+  
+}
+.pliers-pedagogies{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+
+}
+.item {
+background-color: white;
+border-bottom:4px solid #cc0000;
+margin: 20px;
+margin-top: 0px;
+}
+.item h1{
+    color: #cc0000;
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:left;
+    margin-left: 20px;
+}
+.item h2{
+    font-size: 15px;
+    text-align: left;
+    margin-left: 20px;
+    font-weight: bold;
+
+
+}
+.item p{
+    font-size: 15px;
+    text-align: left;
+    margin-left: 20px;
+}
+.imgpedagogy img{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    border-radius: 15px;
+    margin-left: 200px;
+    height: 90vh;
+    border-top: 10px solid #cc0000;
+    border-right: 10px solid #cc0000;
     position: relative;
-    width: 30%;
+   
+
+    }
+    .valeurs h2{
+        color:#cc0000;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .milieur{
+        display: flex;
+        justify-content: center;
+        gap: 45px;
+        height: 50vh;
+    }
+    .left{
+        width: 30%;
+        
+    }
+    .left h1{
+        color: #cc0000;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: left;
+    }
+    .left p{
+        text-align: left;
+        font-size: 14px;
+    }
+    .left button{
+        background-color: #cc0000;
+        color: #ddd;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 30px;
+        width: 50%;
+        height: 7vh;
+
+       
+    }
+    .btn button{
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        margin: 20px;
+        padding: 10px;
+      
+    }
+    .btn button:hover{
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        margin: 20px;
+        padding: 10px;
+        background-color: #ddd;
+        color: #cc0000;
+      
+    }
+    .right{
+        width: 30%;
+        display: grid;
+        grid-template-columns: 400px;
+        justify-content: flex-end;
+        gap: 0px;
+        text-align:initial;
+        margin: 20px;
+       
+    }
+    .itemnumber{
+        display: flex;
+        justify-content:center;
+        border: 1px solid ghostwhite;
+        background-color: #fff;
+        box-sizing: border-box;
+        margin: 10px;
+       
+       
+    }
+    .number{
+        text-align: center;
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        background-color: #f4cfcf;
+        padding: 10px;
+        margin: 25px;
+        
+    }
+    .number h1{
+        color: #cc0000;
+        /* font-size: 20px; */
+        font-weight: bold;
+        text-align: center;
+    }
+    .description{
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+    .description h1{
+       margin-left: 20px;
+       font-size: 25px;
+       font-weight: bold;
+
+    }
+    .description h3{
+        margin-left: 20px;
+        font-size: 25px;
+        font-weight: bold;
+ 
+     }
+    .description p{
+        margin-left: 20px;
+        /* font-size: 12px; */
+    padding-bottom: 2px;
+     }
+.tiret{
+    font-size: 60px;
+    color: #d10000;
+    font-weight: bold;
+   
+}
+.statistics{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 90px;
+    background: #cc0000;
+
+}
+.statistics .stat {
+    
+    color: #fff;
+    padding: 10px;
+    width: 20%;
 }
 
-.quote:before {
-    content: '“';
-    font-size: 4em;
-    color: red;
-    position: absolute;
-    top: -20px;
-    left: -20px;
-}
-
-.quote p {
+.statistics .stat h3 {
     margin: 0;
+    font-size: 2.5em;
+}
+.statistics .stat p{
+font-size: 1rem;
+}
+.equipe h1{
+color: #cc0000;
+font-size: 1.5em;
+}
+.equipe p{
+    font-size: 20px;
+}
+.Nosequipe{
+    display:flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    gap: 40px;
+}
+.img img{
+    display: flex;
+    justify-content: left;
+   margin-left: 10px;
+}
+.site img{
+    width: 20px;
+    color: #cc0000;
+    background-color: #cc0000;
+    
+}
+.title2 h2{
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+}
+.title2 h3{
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+    color: #cc0000;
+}
+.bas{
+    color: #cc0000;
+    font-size: 4.5em;
+    margin-top: 50px;
+}
+.title2 p{
+    display: flex;
+    justify-content: left;
+    font-size: 15px;
+    margin-left: 20px;
+    color: #333;
+}
+.itemequipe{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 80%;
+   
+    
+}
+.item1{
+    background-color: #fff;
+    height: 50vh;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 70%;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+
+}
+.offers {
+    /* flex-direction: column; */
+    align-items: flex-start;
+    text-align: left;
+}
+
+.offer {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin-bottom: 20px;
+
+   
+}
+.off{
+    display: flex;
+    justify-content: space-around;
+}
+
+.offer h3 {
+    margin: 0;
+}
+
+.offer-details {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.offer-details span {
+    background: #cc0000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.additional-offers .offer {
+    background: transparent;
+    border: 2px dashed #cc0000;
+    cursor: pointer;
+}
+.partners{
+    background-color: #fff;
+}
+.rond{}
+.partner-logos {
+    flex-wrap: wrap;
+    margin-left: 10%;
+    gap: 40px;
+    width: 80%;
+    justify-content: center;
+    margin-right: 10%;
+}
+
+.partner-logos img {
+    width: 100px;
+    height: auto;
+    padding: 40px;
 }
 
 /* Footer styles */
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #f9f9f9ff;
-    font-size: 50px;
-
+    background: #333;
+    color: #fff;
+    padding: 50px 20px;
 }
 
-footer p {
-    color: red;
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section .socials a {
+    color: #fff;
     font-size: 1.5em;
-    margin: 0;
-   
+    margin-right: 10px;
+}
+blockquote{
+    background-color: #f9f9f9;
+    border-left: 5px solid #cc0000;
+}
+
+.footer-section .newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-section .newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-section .newsletter button {
+    background-color: #cc0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
