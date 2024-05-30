@@ -6,6 +6,7 @@ body {
     box-sizing: border-box;
 }
 
+
 /* Header styles */
 header {
     display: flex;
@@ -592,6 +593,13 @@ font-size: 1.5em;
     position: absolute;
     margin: -30px;
 }
+.photo-rond-line img{
+    z-index:-1 ;
+    position: absolute;
+    margin: -70px -300px 0 0;
+   padding-left: 100px;
+   
+}
 /* section .recruttements */
 .recruttements h1{
     font-size: 3em;
@@ -818,15 +826,7 @@ blockquote{
     border-radius: 4px ;
     
 }
-/* 
-.footer-section .newsletter button {
-    background-color: #4bcc00;
-    color: #fff;
-    border: 2px solid red;
-    padding: 10px 20px;
-    cursor: pointer;
-    color: white; */
-}
+
 .group-row{
     display: flex;
     justify-content:space-between;
@@ -834,8 +834,10 @@ blockquote{
 
 
 }
+
 .simpl img {
 width: 100px;
+filter: invert(1);
 }
 .socials img{
     width: 40px;
@@ -851,6 +853,7 @@ width: 100px;
     text-decoration: none;
     list-style: none;
     padding: 5px;
+    
 }
 .links ul li{
     text-decoration: none;
@@ -872,7 +875,7 @@ width: 100px;
     justify-content: center;
 
 }
-    input {
+    .group-row input {
         display: block;
         width: 80%;
         margin-bottom: 16px;
@@ -881,6 +884,17 @@ width: 100px;
         padding: 10px;
       
 
+    }
+    .separation{
+        display: flex;
+        width: 500px;
+        gap: 20px;
+        
+    }
+    .separation input{
+        display: flex;
+        width: 200px;
+        
     }
     form{}
  
@@ -904,7 +918,6 @@ width: 100px;
     }
     .checkbox{
         display: flex;
-        justify-content:center;
         text-align: left;
         gap: 0;
 
@@ -914,7 +927,7 @@ width: 100px;
         height: 10px;
     
     }
-    button{
+    .rejoindre{
         background-color:#d10000;
         color: white;
         width: 130px;
@@ -923,9 +936,33 @@ width: 100px;
 
 
     }
+    .joi{
+        background-color:#d10000;
+        color: white;
+        width: 90px;
+        height: 40px;
+        border:none;
+      
+
+    }
+    .newsletter input{
+        height: 35px;
+        z-index: 1;
+       
+    }
+    
+    .fin{
+        display: flex;
+        justify-content: space-between;
+        background-color: #d10000;
+        justify-items: center;
+        color: white;
+       padding: 10px 40px 10px 40px;
+    }
     .footer-section-about img{
         width: 100pw;
         height: 50px;
         filter:invert(1)
 
     }
+    
