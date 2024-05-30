@@ -32,6 +32,8 @@ nav ul {
     
 }
 
+
+
 nav ul li {
     display: inline;
   
@@ -87,10 +89,24 @@ section {
     z-index: -2;
 }
 
-.history h2, .pedagogy h2, .numbers h2, .current-offers h2, .partners h2 {
+.history h2, .pedagogy h2, .partners h2 {
     color: #cc0000;
     font-size: 2em;
     margin-top: 60px;
+}
+.current-offers h2{
+    color: #cc0000;
+    font-size: 2em;
+}
+.current-offers h4, hr{
+    color: #cc0000;
+   
+}
+
+#numbers h2{ 
+color: #cc0000;
+    font-size: 2em;
+    /* margin-top: 300px; */
 }
 
 .opening, .pedagogy-content, .offers, .partner-logos {
@@ -102,7 +118,9 @@ section {
     position: relative;
 
 }
-
+#numbers{
+    margin-top: 200px;
+}
 /* Specific section styles */
 .opening-year {
     background: #cc0000;
@@ -122,6 +140,33 @@ section {
     display: flex;
     justify-content: flex-end;
 }
+.format{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    text-align: center;
+    justify-items: center;
+}
+.format h3{
+  padding-top: 10px;
+ 
+}
+
+.format button{
+    background-color: #d10000;
+    color: #ffff;
+    border: none;
+   width: 40px;
+   border-radius: 40px;
+   height: 40px;
+   font-size: 20px;
+}
+.containere a{
+    display:flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    color: #000;
+}
 
 .opening-year h3 {
     margin: 0;
@@ -130,11 +175,23 @@ section {
     justify-content: flex-end;
 }
 .cercle{
-    color: #cc0000;
-    font-size: 80px;
-    margin-top: 40px;
+
     display:flex;
     justify-content: center;
+}
+.cercle .cercl1{
+    background-color: #cc0000;
+   margin: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+.cercle .cercle2{
+    background-color: #cc0000;
+    width: 60px;
+    height: 10px;
+    border-radius: 10px;
+    margin: 15px;
 }
 
 .rond2{
@@ -214,9 +271,9 @@ section {
 }
 
 .pedagogy-content .video {
-    width: 500px;
-    max-width: 100px;
+    width: 70%;
     margin-top: 40px;
+    margin-left: 10%;
 }
 
 .pedagogy-content .description {
@@ -375,6 +432,7 @@ box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
         /* font-size: 20px; */
         font-weight: bold;
         text-align: center;
+        margin-top: 10px;
     }
     .description{
         padding: 0px;
@@ -400,10 +458,21 @@ box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
         /* font-size: 12px; */
     padding-bottom: 2px;
      }
+     .tirets{
+        display: flex;
+        justify-content: center;
+     }
 .tiret{
-    font-size: 60px;
-    color: #d10000;
+    width:100px;
+    height:10px;
+    background-color: #d10000;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    text-align: center;
+    justify-items: center;
    
 }
 .statistics{
@@ -467,9 +536,27 @@ font-size: 1.5em;
     color: #cc0000;
 }
 .bas{
-    color: #cc0000;
-    font-size: 4.5em;
-    margin-top: 50px;
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   padding-top: 40px;
+
+
+}
+.base{
+    width: 10px;
+    height: 10px;
+    background-color: #cc0000;
+    margin: 15px;
+
+    border-radius: 10px;
+}
+.baser{
+    width: 90px;
+    height: 10px;
+    background-color: #cc0000;
+    margin: 20px;
+    border-radius: 50px;
 }
 .title2 p{
     display: flex;
@@ -483,7 +570,7 @@ font-size: 1.5em;
     justify-content: center;
     gap: 30px;
     width: 80%;
-   
+
     
 }
 .item1{
@@ -494,23 +581,88 @@ font-size: 1.5em;
     width: 70%;
     box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
 
+ 
 }
+.rorouge{
+    background-color:#e2a1a1 ;
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    z-index: -1;
+    position: absolute;
+    margin: -30px;
+}
+/* section .recruttements */
+.recruttements h1{
+    font-size: 3em;
+    color: #cc0000;
+    font-weight: bold;
+}
+.recruttement{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    gap: 20px;
+
+}
+.recruttement .left1{
+    width: 50%;
+}
+.recruttement .left1 img{
+    width: 80%;
+}
+
+.recruttement .right1{
+text-align: left;
+
+} 
+.recruttement .right1 h2{
+    text-align: left;
+    color: #cc0000;
+    font-size: 1.5em;
+    } 
+
 .offers {
     /* flex-direction: column; */
     align-items: flex-start;
     text-align: left;
+    margin-bottom: 40px;
+   
+ 
 }
 
 .offer {
-    background: #fff;
+    background-color: #efd3d3;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 60%;
+    width: 40%;
     margin-bottom: 20px;
+    height: 80vh;
 
    
 }
+.reference{
+    display: flex;
+    justify-content: space-between;
+}
+.trains{
+    background-color: #cc0000;
+    width: 20px;
+    height: 5px;
+    margin-top: 10px;
+}
+.offer p{
+font-size: 14px;
+}
+.dim{
+    display: flex;
+    gap: 5px;
+    margin: 10px;
+
+
+}
+
 .off{
     display: flex;
     justify-content: space-around;
@@ -521,16 +673,31 @@ font-size: 1.5em;
 }
 
 .offer-details {
-    display: flex;
-    gap: 10px;
-    margin: 10px 0;
+    /* gap: 10px;
+    margin: 40px; */
+    width: 400px;
+    background-color: #ffff;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px #8c8787;
+    height: 25vh;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+}
+.fixe{
+    height: 4vh;
+    width: 120px;
+}
+.dim h6{
+ padding-top: -4000px;
+}
+.offer-details img {
+   width: 20px;
+   height: 20px; 
+   margin-top: 20px;
 }
 
-.offer-details span {
-    background: #cc0000;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
+.offer-details p{
+  padding-top: -40px;
 }
 
 .additional-offers .offer {
@@ -564,19 +731,41 @@ font-size: 1.5em;
     height: auto;
     padding: 40px;
 }
+.containere {
+    text-align: center;
+  }
+  
+.postuler-btn{
+    
+    background-color: #cc0000;
+    color: white;
+    align-items: center;
+    display: inline-block;
+    width: 150px;
+    height: 6vh;
+    border-radius: 15px;
+    border: none;
+    font-size: 16px;
+    margin-top: 20px;
+
+
+
+}
 
 /* Footer styles */
 footer {
     background: #333;
     color: #fff;
     padding: 50px 20px;
+    
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 20px;
+    gap: 40px;
+    
 }
 
 .footer-section {
@@ -584,12 +773,16 @@ footer {
 }
 
 .footer-section h3 {
-    margin-bottom: 20px;
+    margin: 20px;
+    
 }
 
 .footer-section ul {
     list-style: none;
     padding: 0;
+    font-size: 14px;
+   
+   
 }
 
 .footer-section ul li {
@@ -619,14 +812,120 @@ blockquote{
 
 .footer-section .newsletter input {
     padding: 10px;
-    border: none;
+    border: 2px solid #ccc;
     border-radius: 5px;
+    border-right: none;
+    border-radius: 4px ;
+    
 }
-
+/* 
 .footer-section .newsletter button {
-    background-color: #cc0000;
+    background-color: #4bcc00;
     color: #fff;
-    border: none;
+    border: 2px solid red;
     padding: 10px 20px;
     cursor: pointer;
+    color: white; */
 }
+.group-row{
+    display: flex;
+    justify-content:space-between;
+    gap: 20px;
+
+
+}
+.simpl img {
+width: 100px;
+}
+.socials img{
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+.footer-content{
+    display: flex;
+    justify-content: center;
+    gap: 150px
+}
+.contact ul li{
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+}
+.links ul li{
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+    color: white;
+}
+.links ul a{
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+    color: white;
+}
+.newsletter{
+    padding: 5px;
+}
+.current-offers{
+    display: flex;
+    justify-content: center;
+
+}
+    input {
+        display: block;
+        width: 80%;
+        margin-bottom: 16px;
+        height: 5vh;
+        border-radius: 5px;
+        padding: 10px;
+      
+
+    }
+    form{}
+ 
+  
+
+    .topic select{
+        width: 450px;
+        height: 5vh;
+        background-color: var(--white);
+        border:2px solid var(--Primary);
+        border-radius: 5px;
+
+    }
+    .topic input{
+        width: 450px;
+        height: 100px;
+        text-align: left;
+       
+       
+
+    }
+    .checkbox{
+        display: flex;
+        justify-content:center;
+        text-align: left;
+        gap: 0;
+
+    }
+    .checkbox input{
+        width: 10px;
+        height: 10px;
+    
+    }
+    button{
+        background-color:#d10000;
+        color: white;
+        width: 130px;
+        height: 50px;
+        border-radius: 20px;
+
+
+    }
+    .footer-section-about img{
+        width: 100pw;
+        height: 50px;
+        filter:invert(1)
+
+    }
