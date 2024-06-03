@@ -19,6 +19,17 @@ header {
     width: 100%;
     z-index: 10;
 }
+.disque{
+    display: flex;
+    gap: 10px;
+}
+.triangle{
+width: 40px;
+height: 40px;
+clip-path: polygon(100% 0, 100% 100%, 0 50%);
+background-color: #cc0000;
+margin-top: 25px;
+}
 
 .logo img {
     height: 50px;
